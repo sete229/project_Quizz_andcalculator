@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Kviz F1</title>
+    <script src="kviz.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../grid.css">
+</head>
+<body>
+    <nav>
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="../index.html">Naslovnica</a></li> 
+            <li><a href="../grid.css">Grid</a></li> 
+            <li><a href="js.html">webstranica</a></li> 
+            <li><a href="../jsPrimjeri.html">JS Primjeri</a></li> 
+            <li><a href="../kalkulator.html">Kalkulator</a></li> 
+        </ul>
+    </nav>
+    <div id="column1">
+        <h1 id="naslov">Kviz f1</h1>
+        <p>Dobro došli u ovoj stranici odlučio sam testirati znanje korisnika o formuli 1 sa 10 kratkih pitanja</p>
+        <form id="quizForm">
+            <h2>Formula 1 Questions</h2>
+            <p>1. Who won the 2023 Formula 1 World Championship?</p>
+            <input type="radio" name="q1" value="Max Verstappen"> Max Verstappen<br>
+            <input type="radio" name="q1" value="Lewis Hamilton"> Lewis Hamilton<br>
+            <input type="radio" name="q1" value="Fernando Alonso"> Fernando Alonso<br>
+
+            <p>2. Which team has the most Constructors' Championships?</p>
+            <input type="radio" name="q2" value="Ferrari"> Ferrari<br>
+            <input type="radio" name="q2" value="Mercedes"> Mercedes<br>
+            <input type="radio" name="q2" value="Red Bull"> Red Bull<br>
+            
+
+            <p>3. In which year was the first Formula 1 race held?</p>
+            <input type="radio" name="q3" value="1950"> 1950<br>
+            <input type="radio" name="q3" value="1960"> 1960<br>
+            <input type="radio" name="q3" value="1970"> 1970<br>
+
+            <p>4. Which circuit hosts the Monaco Grand Prix?</p>
+            <input type="radio" name="q4" value="Circuit de Monaco"> Circuit de Monaco<br>
+            <input type="radio" name="q4" value="Silverstone"> Silverstone<br>
+            <input type="radio" name="q4" value="Spa-Francorchamps"> Spa-Francorchamps<br>
+
+            <p>5. Who holds the record for most pole positions?</p>
+            <input type="radio" name="q5" value="Lewis Hamilton"> Lewis Hamilton<br>
+            <input type="radio" name="q5" value="Ayrton Senna"> Ayrton Senna<br>
+            <input type="radio" name="q5" value="Michael Schumacher"> Michael Schumacher<br>
+
+            <p>6. What is the name of Red Bull Racing's engine supplier for 2023?</p>
+            <input type="radio" name="q6" value="Honda"> Honda<br>
+            <input type="radio" name="q6" value="Renault"> Renault<br>
+            <input type="radio" name="q6" value="Ferrari"> Ferrari<br>
+
+            <p>7. How many points does the winner of a race receive?</p>
+            <input type="radio" name="q7" value="25"> 25<br>
+            <input type="radio" name="q7" value="20"> 20<br>
+            <input type="radio" name="q7" value="15"> 15<br>
+
+            <p>8. Which country hosts the Suzuka Circuit?</p>
+            <input type="radio" name="q8" value="Japan"> Japan<br>
+            <input type="radio" name="q8" value="China"> China<br>
+            <input type="radio" name="q8" value="Malaysia"> Malaysia<br>
+
+            <p>9. What is the length of a typical Formula 1 Grand Prix?</p>
+            <input type="radio" name="q9" value="305 km"> 305 km<br>
+            <input type="radio" name="q9" value="250 km"> 250 km<br>
+            <input type="radio" name="q9" value="200 km"> 200 km<br>
+
+            <p>10. Who was the youngest Formula 1 race winner?</p>
+            <input type="radio" name="q10" value="Max Verstappen"> Max Verstappen<br>
+            <input type="radio" name="q10" value="Sebastian Vettel"> Sebastian Vettel<br>
+            <input type="radio" name="q10" value="Fernando Alonso"> Fernando Alonso<br>
+
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+    </div> 
+    
+    <div id="column2">
+        <p id="results"></p>
+        <button id="changeButtonsStyle">Promijeni stil butuna</button>
+        <input type="email" id="email">
+        <button onclick="printEmail()">Ispiši e-mail</button>
+    </div> 
+
+</body>
+</html>
